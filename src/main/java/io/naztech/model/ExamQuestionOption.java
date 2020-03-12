@@ -3,10 +3,12 @@ package io.naztech.model;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -14,7 +16,8 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="T_EXAM_QUESTION_OPTION")
+@Table(name="T_EXAM_QUESTION_OPTION1")
+//@Embeddable
 public class ExamQuestionOption {
 	 @Id
 	 @Column(name = "id_option_key")
@@ -40,7 +43,8 @@ public class ExamQuestionOption {
 	 private String optionName;
 	 @Column(name = "is_answer")
 	 private int isAnswer;
-	 @Column(name = "id_question_key")
-	 @ManyToOne
+	
+	 //@Column(name = "id_question_key")
+	 //@ManyToOne
 	 private ExamQuestion examQuestion;
 }

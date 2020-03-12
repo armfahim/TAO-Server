@@ -4,11 +4,13 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -16,7 +18,8 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name ="T_EXAM_QUESTION")
+@Table(name ="T_EXAM_QUESTION1")
+
 public class ExamQuestion {
 	 @Id
 	 @Column(name = "id_question_key")
@@ -41,7 +44,10 @@ public class ExamQuestion {
 	 @Column(name = "tx_question")
 	 private String question;
 	 @Column(name = "tx_question_set")
-	 private String questionSet; 
-	 @OneToMany(mappedBy="examQuestion")
+	 private String questionSet;
+	 
+	 @OneToMany(cascade = CascadeType.ALL)
+	 @JoinColumn(name = "id_question_key", referencedColumnName = "id_option_key")
+	 //@OneToMany(mappedBy="examQuestion")
 	 private List<ExamQuestionOption> examQuestionOptions = new ArrayList<ExamQuestionOption>();
 }

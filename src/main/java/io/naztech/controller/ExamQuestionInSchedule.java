@@ -22,7 +22,7 @@ public class ExamQuestionInSchedule {
 	@Autowired
 	DbConfig dbConfig;
 	
-	@Scheduled(fixedRate = 21000000, initialDelay = 500)
+	@Scheduled(fixedRate = 210000, initialDelay = 500)
 	public void examQuestionScheduling() throws ParserConfigurationException, SAXException, IOException {
 	
 		scrapXml.extractData();
