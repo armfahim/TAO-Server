@@ -5,7 +5,8 @@ import java.io.IOException;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Controller;
 import org.xml.sax.SAXException;
 
@@ -22,7 +23,8 @@ public class TaoServerInSchedule {
 	@Autowired
 	AppConfig dbConfig;
 	
-	@Scheduled(fixedRate = 210000, initialDelay = 500)
+	//@Scheduled(fixedRate = 210000, initialDelay = 500)
+	@EventListener(ApplicationReadyEvent.class)
 	public void examQuestionScheduling() throws ParserConfigurationException, SAXException, IOException {
 	
 		scrapXml.extractData();

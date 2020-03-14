@@ -13,7 +13,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.xml.sax.SAXException;
 
 @SpringBootApplication
-@EnableScheduling
+//@EnableScheduling
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class TaoServerApplication {
 	
