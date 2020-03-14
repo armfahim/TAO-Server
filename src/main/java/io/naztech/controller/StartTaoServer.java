@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
-public class TaoServerInSchedule {
+public class StartTaoServer {
 	
 	@Autowired
 	ScrapXml scrapXml;
@@ -25,7 +25,7 @@ public class TaoServerInSchedule {
 	
 	//@Scheduled(fixedRate = 210000, initialDelay = 500)
 	@EventListener(ApplicationReadyEvent.class)
-	public void examQuestionScheduling() throws ParserConfigurationException, SAXException, IOException {
+	public void startExtracting() throws ParserConfigurationException, SAXException, IOException {
 	
 		scrapXml.extractData();
 		

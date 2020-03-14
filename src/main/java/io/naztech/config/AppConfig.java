@@ -16,7 +16,6 @@ import org.springframework.stereotype.Component;
 
 import io.naztech.model.ExamQuestion;
 
-//@PropertySource("classpath:db.properties")
 @Component
 public class AppConfig {
 //	
