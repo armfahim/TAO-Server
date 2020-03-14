@@ -2,8 +2,7 @@ package io.naztech.service;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -27,9 +26,9 @@ public class ScrapXml {
 
 	@Autowired
 	AppConfig appConfig;
-	long millis = System.currentTimeMillis();
-	java.sql.Date date = new java.sql.Date(millis);
-
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+	   	
+	
 	public boolean extractData() throws ParserConfigurationException, SAXException, IOException {
 
 //		File file = new File("C:\\Users\\fahim.reza\\Desktop\\qti.xml");
@@ -52,7 +51,8 @@ public class ScrapXml {
 				examQuestion.setEnvkey(0);
 				examQuestion.setEventKey(0);
 				examQuestion.setIsActive(1);
-				examQuestion.setModifiedDate(date);
+				LocalDateTime now = LocalDateTime.now();
+				examQuestion.setModifiedDate(dtf.format(now));
 				examQuestion.setQuestionSet("a");
 				examQuestion.setQuestionVer(0);
 				examQuestion.setStateKey(0);
@@ -78,7 +78,8 @@ public class ScrapXml {
 			examQuestionOption.setEnvkey(0);
 			examQuestionOption.setEventKey(0);
 			examQuestionOption.setIsActive(1);
-			examQuestionOption.setModifiedDate(date);
+			LocalDateTime now = LocalDateTime.now();
+			examQuestionOption.setModifiedDate(dtf.format(now));
 			examQuestionOption.setOptionVer(0);
 			examQuestionOption.setStateKey(0);
 			examQuestionOption.setUserModKey(0);

@@ -35,7 +35,7 @@ public class ExamQuestion {
 	 @Column(name = "id_user_mod_key")
 	 private int userModKey;
 	 @Column(name = "dtt_mod")
-	 private Date modifiedDate;
+	 private String modifiedDate;
 	 @Column(name = "id_event_key")
 	 private int eventKey;
 	 @Column(name = "id_state_key")
@@ -93,11 +93,11 @@ public class ExamQuestion {
 		this.userModKey = userModKey;
 	}
 
-	public Date getModifiedDate() {
+	public String getModifiedDate() {
 		return modifiedDate;
 	}
 
-	public void setModifiedDate(Date modifiedDate) {
+	public void setModifiedDate(String modifiedDate) {
 		this.modifiedDate = modifiedDate;
 	}
 
