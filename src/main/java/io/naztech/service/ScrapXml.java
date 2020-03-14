@@ -27,100 +27,73 @@ public class ScrapXml {
 
 	@Autowired
 	DbConfig dbConfig;
+	long millis = System.currentTimeMillis();
+	java.sql.Date date = new java.sql.Date(millis);
+
 	public boolean extractData() throws ParserConfigurationException, SAXException, IOException {
-		ExamQuestion examQuestion = new ExamQuestion();
-		ExamQuestionOption examQuestionOption = new ExamQuestionOption();
-		
-		File file = new File("C:\\Users\\fahim.reza\\Desktop\\qti.xml");
+
+//		File file = new File("C:\\Users\\fahim.reza\\Desktop\\qti.xml");
+		File file = new File("D:\\Spring Workspace\\qti.xml");
+
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		org.w3c.dom.Document doc = db.parse(file);
 		doc.getDocumentElement().normalize();
-		//System.out.println("Root element: " + doc.getDocumentElement().getNodeName());
+
 		org.w3c.dom.NodeList nodeList = doc.getElementsByTagName("choiceInteraction");
-		for (int itr = 0; itr < nodeList.getLength(); itr++) {
-			Node node = nodeList.item(itr);
-			//System.out.println("\nNode Name :" + node.getNodeName());
+		for (int itrQ = 0; itrQ < nodeList.getLength(); itrQ++) {
+			Node node = nodeList.item(itrQ);
 			if (node.getNodeType() == Node.ELEMENT_NODE) {
-				Element eElement = (Element) node; 
-				
-				examQuestionOption.setActionKey(0);
-				examQuestionOption.setEnvkey(0);
-				examQuestionOption.setEventKey(0);
-				examQuestionOption.setIsActive(1);
-				final String dateTime = "2012-02-22T02:06:58.147Z";
-				DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT;
-				final ZonedDateTime parsed = ZonedDateTime.parse(dateTime, formatter.withZone(ZoneId.of("UTC")));
-			    System.out.println(parsed.toLocalDateTime());
-			    examQuestionOption.setModifiedDate(parsed.toLocalDateTime());
-			    examQuestionOption.setOptionVer(0);
-			    examQuestionOption.setStateKey(0);
-			    examQuestionOption.setUserModKey(0);
-			    examQuestionOption.setIsAnswer(0);
-				examQuestionOption.setOptionName(eElement.getElementsByTagName("simpleChoice").item(0).getTextContent());
-//				examQuestionOption.setOptionName(eElement.getElementsByTagName("simpleChoice").item(1).getTextContent());
-//				examQuestionOption.setOptionName(eElement.getElementsByTagName("simpleChoice").item(2).getTextContent());
-				
+				Element eElement = (Element) node;
+				ExamQuestion examQuestion = new ExamQuestion();
+
 				examQuestion.setQuestion(eElement.getElementsByTagName("prompt").item(0).getTextContent());
 				examQuestion.setActionKey(0);
 				examQuestion.setEnvkey(0);
 				examQuestion.setEventKey(0);
 				examQuestion.setIsActive(1);
-//				final String dateTime = "2012-02-22T02:06:58.147Z";
-//				DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT;
-//				final ZonedDateTime parsed = ZonedDateTime.parse(dateTime, formatter.withZone(ZoneId.of("UTC")));
-//			    System.out.println(parsed.toLocalDateTime());
-				examQuestion.setModifiedDate(parsed.toLocalDateTime());
+				examQuestion.setModifiedDate(date);
 				examQuestion.setQuestionSet("a");
 				examQuestion.setQuestionVer(0);
 				examQuestion.setStateKey(0);
 				examQuestion.setUserModKey(0);
-				examQuestion.getExamQuestionOptions().add(examQuestionOption);
-				dbConfig.getSessionFactory().save(examQuestion);
-				dbConfig.getSessionFactory().save(examQuestionOption);
-				dbConfig.getTransaction().commit();
-				dbConfig.closeAll();
+				getQuestionOption(eElement, examQuestion);
+//				examQuestion.getExamQuestionOptions().add(examQuestionOption);
+//				dbConfig.getSessionFactory().save(examQuestion);
+//				dbConfig.getTransaction().commit();
+//				dbConfig.closeAll();
 			}
 		}
-		
-		//##################################
-//		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-//		DocumentBuilder builder = factory.newDocumentBuilder();
-//		org.w3c.dom.Document doc = builder.parse("C:/Users/fahim.reza/Desktop/qti.xml");
-//		
-//		org.w3c.dom.NodeList questionList = doc.getElementsByTagName("prompt");
-//		
-//		
-//		for (int i = 0; i < questionList.getLength(); i++) {
-//			Node n = questionList.item(i);
-//			
-//
-//			examQuestion.setQuestion(n.getTextContent().toString().trim());
-//			System.out.println(examQuestion.getQuestion());
-//			examQuestion.setActionKey(0);
-//			examQuestion.setEnvkey(0);
-//			examQuestion.setEventKey(0);
-//			examQuestion.setIsActive(1);
-//			final String dateTime = "2012-02-22T02:06:58.147Z";
-//			DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT;
-//			final ZonedDateTime parsed = ZonedDateTime.parse(dateTime, formatter.withZone(ZoneId.of("UTC")));
-//		    System.out.println(parsed.toLocalDateTime());
-//			examQuestion.setModifiedDate(parsed.toLocalDateTime());
-//			examQuestion.setQuestionSet("a");
-//			examQuestion.setQuestionVer(0);
-//			examQuestion.setStateKey(0);
-//			examQuestion.setUserModKey(0);
-//			
-//			dbConfig.getSessionFactory().save(examQuestion);
-//			dbConfig.getTransaction().commit();
-//			dbConfig.closeAll();
-//		}
-		
 		return true;
-//		org.w3c.dom.NodeList ansList = doc.getElementsByTagName("simpleChoice");
-//		for (int j = 0; j < ansList.getLength(); j++) {
-//			Node n = ansList.item(j);
-//			System.out.println(n.getTextContent());
-//		}
+	}
+
+	private void getQuestionOption(Element eElement, ExamQuestion examQuestion) {
+
+		org.w3c.dom.NodeList optionList = eElement.getElementsByTagName("simpleChoice");
+		for (int itrOp = 0; itrOp < optionList.getLength(); itrOp++) {
+			ExamQuestionOption examQuestionOption = new ExamQuestionOption();
+
+			examQuestionOption.setOptionName(optionList.item(itrOp).getTextContent());
+			examQuestionOption.setActionKey(0);
+			examQuestionOption.setEnvkey(0);
+			examQuestionOption.setEventKey(0);
+			examQuestionOption.setIsActive(1);
+			examQuestionOption.setModifiedDate(date);
+			examQuestionOption.setOptionVer(0);
+			examQuestionOption.setStateKey(0);
+			examQuestionOption.setUserModKey(0);
+			examQuestionOption.setIsAnswer(0);
+
+			examQuestion.getExamQuestionOptions().add(examQuestionOption);
+
+			dbConfig.getSessionFactory().save(examQuestionOption);
+			dbConfig.getTransaction().commit();
+			dbConfig.closeAll();
+
+			dbConfig.getSessionFactory().save(examQuestion);
+			dbConfig.getTransaction().commit();
+			dbConfig.closeAll();
+
+		}
 	}
 }

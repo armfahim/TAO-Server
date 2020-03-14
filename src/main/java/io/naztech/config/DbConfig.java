@@ -1,6 +1,5 @@
 package io.naztech.config;
 
-import org.apache.commons.dbcp.BasicDataSource;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -14,8 +13,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Component;
 
-import com.nazdaqTechnologies.jdbc.JdbcService;
-import com.nazdaqTechnologies.jdbc.JdbcStatementFactory;
 
 import io.naztech.model.ExamQuestion;
 
