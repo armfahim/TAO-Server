@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.xml.sax.SAXException;
 
-import io.naztech.config.DbConfig;
+import io.naztech.config.AppConfig;
 import io.naztech.service.ScrapXml;
 import lombok.extern.slf4j.Slf4j;
 
@@ -20,7 +20,7 @@ public class ExamQuestionInSchedule {
 	@Autowired
 	ScrapXml scrapXml;
 	@Autowired
-	DbConfig dbConfig;
+	AppConfig dbConfig;
 	
 	@Scheduled(fixedRate = 210000, initialDelay = 500)
 	public void examQuestionScheduling() throws ParserConfigurationException, SAXException, IOException {

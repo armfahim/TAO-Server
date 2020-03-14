@@ -18,7 +18,7 @@ import io.naztech.model.ExamQuestion;
 
 //@PropertySource("classpath:db.properties")
 @Component
-public class DbConfig {
+public class AppConfig {
 //	
 //	@Value("${jdbc.url}")
 //	String url;

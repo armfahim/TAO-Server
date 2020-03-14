@@ -16,7 +16,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import io.naztech.config.DbConfig;
+import io.naztech.config.AppConfig;
 import io.naztech.model.ExamQuestion;
 import io.naztech.model.ExamQuestionOption;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 public class ScrapXml {
 
 	@Autowired
-	DbConfig dbConfig;
+	AppConfig appConfig;
 	long millis = System.currentTimeMillis();
 	java.sql.Date date = new java.sql.Date(millis);
 
@@ -86,13 +86,13 @@ public class ScrapXml {
 
 			examQuestion.getExamQuestionOptions().add(examQuestionOption);
 
-			dbConfig.getSessionFactory().save(examQuestionOption);
-			dbConfig.getTransaction().commit();
-			dbConfig.closeAll();
+			appConfig.getSessionFactory().save(examQuestionOption);
+			appConfig.getTransaction().commit();
+			appConfig.closeAll();
 
-			dbConfig.getSessionFactory().save(examQuestion);
-			dbConfig.getTransaction().commit();
-			dbConfig.closeAll();
+			appConfig.getSessionFactory().save(examQuestion);
+			appConfig.getTransaction().commit();
+			appConfig.closeAll();
 
 		}
 	}
