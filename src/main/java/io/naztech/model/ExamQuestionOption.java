@@ -10,17 +10,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name ="T_EXAM_QUESTION_OPTION")
+@Table(name ="T_EXAM_QUESTION_OPTION_SET")
 public class ExamQuestionOption {
 	 @Id
 	 @Column(name = "id_option_key")
-	 @GeneratedValue(strategy =  GenerationType.IDENTITY)
+	 @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_option_generator")
+	 @SequenceGenerator(name ="id_option_generator", initialValue=100000,allocationSize=1, sequenceName = "id_option")
 	 private int optionKey;
 	 
 	 @Column(name = "id_option_ver")
@@ -43,105 +45,103 @@ public class ExamQuestionOption {
 	 private String optionName;
 	 @Column(name = "is_answer")
 	 private int isAnswer;
-	
-	 //@Column(name = "id_question_key")
+
 	 @ManyToOne
-	// @JoinColumn(name = "id_question_key",nullable = true)
 	 private ExamQuestion examQuestion;
 
-	public int getOptionKey() {
-		return optionKey;
-	}
-
-	public void setOptionKey(int optionKey) {
-		this.optionKey = optionKey;
-	}
-
-	public int getOptionVer() {
-		return optionVer;
-	}
-
-	public void setOptionVer(int optionVer) {
-		this.optionVer = optionVer;
-	}
-
-	public int getIsActive() {
-		return isActive;
-	}
-
-	public void setIsActive(int isActive) {
-		this.isActive = isActive;
-	}
-
-	public int getEnvkey() {
-		return envkey;
-	}
-
-	public void setEnvkey(int envkey) {
-		this.envkey = envkey;
-	}
-
-	public int getUserModKey() {
-		return userModKey;
-	}
-
-	public void setUserModKey(int userModKey) {
-		this.userModKey = userModKey;
-	}
-
-	public String getModifiedDate() {
-		return modifiedDate;
-	}
-
-	public void setModifiedDate(String modifiedDate) {
-		this.modifiedDate = modifiedDate;
-	}
-
-	public int getEventKey() {
-		return eventKey;
-	}
-
-	public void setEventKey(int eventKey) {
-		this.eventKey = eventKey;
-	}
-
-	public int getStateKey() {
-		return stateKey;
-	}
-
-	public void setStateKey(int stateKey) {
-		this.stateKey = stateKey;
-	}
-
-	public int getActionKey() {
-		return actionKey;
-	}
-
-	public void setActionKey(int actionKey) {
-		this.actionKey = actionKey;
-	}
-
-	public String getOptionName() {
-		return optionName;
-	}
-
-	public void setOptionName(String optionName) {
-		this.optionName = optionName;
-	}
-
-	public int getIsAnswer() {
-		return isAnswer;
-	}
-
-	public void setIsAnswer(int isAnswer) {
-		this.isAnswer = isAnswer;
-	}
-
-	public ExamQuestion getExamQuestion() {
-		return examQuestion;
-	}
-
-	public void setExamQuestion(ExamQuestion examQuestion) {
-		this.examQuestion = examQuestion;
-	}
+//	public int getOptionKey() {
+//		return optionKey;
+//	}
+//
+//	public void setOptionKey(int optionKey) {
+//		this.optionKey = optionKey;
+//	}
+//
+//	public int getOptionVer() {
+//		return optionVer;
+//	}
+//
+//	public void setOptionVer(int optionVer) {
+//		this.optionVer = optionVer;
+//	}
+//
+//	public int getIsActive() {
+//		return isActive;
+//	}
+//
+//	public void setIsActive(int isActive) {
+//		this.isActive = isActive;
+//	}
+//
+//	public int getEnvkey() {
+//		return envkey;
+//	}
+//
+//	public void setEnvkey(int envkey) {
+//		this.envkey = envkey;
+//	}
+//
+//	public int getUserModKey() {
+//		return userModKey;
+//	}
+//
+//	public void setUserModKey(int userModKey) {
+//		this.userModKey = userModKey;
+//	}
+//
+//	public String getModifiedDate() {
+//		return modifiedDate;
+//	}
+//
+//	public void setModifiedDate(String modifiedDate) {
+//		this.modifiedDate = modifiedDate;
+//	}
+//
+//	public int getEventKey() {
+//		return eventKey;
+//	}
+//
+//	public void setEventKey(int eventKey) {
+//		this.eventKey = eventKey;
+//	}
+//
+//	public int getStateKey() {
+//		return stateKey;
+//	}
+//
+//	public void setStateKey(int stateKey) {
+//		this.stateKey = stateKey;
+//	}
+//
+//	public int getActionKey() {
+//		return actionKey;
+//	}
+//
+//	public void setActionKey(int actionKey) {
+//		this.actionKey = actionKey;
+//	}
+//
+//	public String getOptionName() {
+//		return optionName;
+//	}
+//
+//	public void setOptionName(String optionName) {
+//		this.optionName = optionName;
+//	}
+//
+//	public int getIsAnswer() {
+//		return isAnswer;
+//	}
+//
+//	public void setIsAnswer(int isAnswer) {
+//		this.isAnswer = isAnswer;
+//	}
+//
+//	public ExamQuestion getExamQuestion() {
+//		return examQuestion;
+//	}
+//
+//	public void setExamQuestion(ExamQuestion examQuestion) {
+//		this.examQuestion = examQuestion;
+//	}
 }

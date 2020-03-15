@@ -1,8 +1,5 @@
 package io.naztech.model;
 
-import java.sql.Date;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -11,19 +8,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name ="T_EXAM_QUESTION")
+@Table(name ="T_EXAM_QUESTION_SET")
 public class ExamQuestion {
 	 @Id
 	 @Column(name = "id_question_key")
-	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+	 @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_question_generator")
+	 @SequenceGenerator(name ="id_question_generator", initialValue=100000,allocationSize=1, sequenceName = "id_question")
 	 private int questionKey;
 	 
 	 @Column(name = "id_question_ver")
@@ -48,105 +46,105 @@ public class ExamQuestion {
 	 private String questionSet;
 	 
 	 @OneToMany(cascade = CascadeType.ALL)
-	 @JoinColumn(name="id_question_key")
+//	 @JoinColumn(name="id_question_key")
 //	 @JoinColumn(name = "id_question_key", referencedColumnName = "id_question_key")
 //	 @OneToMany(mappedBy="examQuestion")
-	 private List<ExamQuestionOption> examQuestionOptions = new ArrayList<ExamQuestionOption>();
+	 private List<ExamQuestionOption> examQuestionOptions;
 
-	public int getQuestionKey() {
-		return questionKey;
-	}
-
-	public void setQuestionKey(int questionKey) {
-		this.questionKey = questionKey;
-	}
-
-	public int getQuestionVer() {
-		return questionVer;
-	}
-
-	public void setQuestionVer(int questionVer) {
-		this.questionVer = questionVer;
-	}
-
-	public int getIsActive() {
-		return isActive;
-	}
-
-	public void setIsActive(int isActive) {
-		this.isActive = isActive;
-	}
-
-	public int getEnvkey() {
-		return envkey;
-	}
-
-	public void setEnvkey(int envkey) {
-		this.envkey = envkey;
-	}
-
-	public int getUserModKey() {
-		return userModKey;
-	}
-
-	public void setUserModKey(int userModKey) {
-		this.userModKey = userModKey;
-	}
-
-	public String getModifiedDate() {
-		return modifiedDate;
-	}
-
-	public void setModifiedDate(String modifiedDate) {
-		this.modifiedDate = modifiedDate;
-	}
-
-	public int getEventKey() {
-		return eventKey;
-	}
-
-	public void setEventKey(int eventKey) {
-		this.eventKey = eventKey;
-	}
-
-	public int getStateKey() {
-		return stateKey;
-	}
-
-	public void setStateKey(int stateKey) {
-		this.stateKey = stateKey;
-	}
-
-	public int getActionKey() {
-		return actionKey;
-	}
-
-	public void setActionKey(int actionKey) {
-		this.actionKey = actionKey;
-	}
-
-	public String getQuestion() {
-		return question;
-	}
-
-	public void setQuestion(String question) {
-		this.question = question;
-	}
-
-	public String getQuestionSet() {
-		return questionSet;
-	}
-
-	public void setQuestionSet(String questionSet) {
-		this.questionSet = questionSet;
-	}
-
-	public List<ExamQuestionOption> getExamQuestionOptions() {
-		return examQuestionOptions;
-	}
-
-	public void setExamQuestionOptions(List<ExamQuestionOption> examQuestionOptions) {
-		this.examQuestionOptions = examQuestionOptions;
-	}
+//	public int getQuestionKey() {
+//		return questionKey;
+//	}
+//
+//	public void setQuestionKey(int questionKey) {
+//		this.questionKey = questionKey;
+//	}
+//
+//	public int getQuestionVer() {
+//		return questionVer;
+//	}
+//
+//	public void setQuestionVer(int questionVer) {
+//		this.questionVer = questionVer;
+//	}
+//
+//	public int getIsActive() {
+//		return isActive;
+//	}
+//
+//	public void setIsActive(int isActive) {
+//		this.isActive = isActive;
+//	}
+//
+//	public int getEnvkey() {
+//		return envkey;
+//	}
+//
+//	public void setEnvkey(int envkey) {
+//		this.envkey = envkey;
+//	}
+//
+//	public int getUserModKey() {
+//		return userModKey;
+//	}
+//
+//	public void setUserModKey(int userModKey) {
+//		this.userModKey = userModKey;
+//	}
+//
+//	public String getModifiedDate() {
+//		return modifiedDate;
+//	}
+//
+//	public void setModifiedDate(String modifiedDate) {
+//		this.modifiedDate = modifiedDate;
+//	}
+//
+//	public int getEventKey() {
+//		return eventKey;
+//	}
+//
+//	public void setEventKey(int eventKey) {
+//		this.eventKey = eventKey;
+//	}
+//
+//	public int getStateKey() {
+//		return stateKey;
+//	}
+//
+//	public void setStateKey(int stateKey) {
+//		this.stateKey = stateKey;
+//	}
+//
+//	public int getActionKey() {
+//		return actionKey;
+//	}
+//
+//	public void setActionKey(int actionKey) {
+//		this.actionKey = actionKey;
+//	}
+//
+//	public String getQuestion() {
+//		return question;
+//	}
+//
+//	public void setQuestion(String question) {
+//		this.question = question;
+//	}
+//
+//	public String getQuestionSet() {
+//		return questionSet;
+//	}
+//
+//	public void setQuestionSet(String questionSet) {
+//		this.questionSet = questionSet;
+//	}
+//
+//	public List<ExamQuestionOption> getExamQuestionOptions() {
+//		return examQuestionOptions;
+//	}
+//
+//	public void setExamQuestionOptions(ExamQuestionOption examQuestionOption) {
+//		this.examQuestionOptions.add(examQuestionOption);
+//	}
 	 
 }
