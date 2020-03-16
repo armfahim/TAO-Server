@@ -45,7 +45,7 @@ public class ExamQuestion {
 	 @Column(name = "tx_question_set")
 	 private String questionSet;
 	 
-	 @OneToMany(cascade = CascadeType.ALL)
+	 @OneToMany(cascade = CascadeType.ALL,mappedBy= "examQuestion")
 //	 @JoinColumn(name="id_question_key")
 //	 @JoinColumn(name = "id_question_key", referencedColumnName = "id_question_key")
 //	 @OneToMany(mappedBy="examQuestion")

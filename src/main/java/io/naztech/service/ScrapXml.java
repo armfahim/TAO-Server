@@ -100,7 +100,7 @@ public class ScrapXml {
 	}
 	
 	private NodeList getNodeList(String fileName) {
-		File file = new File("C:\\Users\\fahim.reza\\Desktop\\"+fileName);
+		File file = new File("C:\\Users\\fahim.reza\\Desktop\\XMLFile.xml");
 		//	File file = new File("D:\\Spring Workspace\\qti.xml");
 			try {
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
