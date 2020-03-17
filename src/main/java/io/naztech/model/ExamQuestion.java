@@ -24,6 +24,7 @@ public class ExamQuestion {
 	 @SequenceGenerator(name ="id_question_generator", initialValue=100000,allocationSize=1, sequenceName = "id_question")
 	 private int questionKey;
 	 
+	 
 	 @Column(name = "id_question_ver")
 	 private int questionVer;
 	 @Column(name = "is_active")

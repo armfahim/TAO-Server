@@ -10,10 +10,14 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
+import io.naztech.service.ScrapXml;
+import io.naztech.service.TestService;
 
 class TestXml {
 
@@ -27,30 +31,26 @@ class TestXml {
 
 	@Test
 	void test() throws ParserConfigurationException, SAXException, IOException {
-		File file = new File("C:\\Users\\fahim.reza\\Desktop\\New folder\\Book1.xml");
-		// File file = new File("D:\\Spring Workspace\\qti.xml");
-		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-		DocumentBuilder db = dbf.newDocumentBuilder();
-		org.w3c.dom.Document doc = db.parse(file);
-		doc.getDocumentElement().normalize();
-		
-		NodeList nodeList = doc.getElementsByTagName("Row");
-		System.out.println(nodeList.getLength());
-
-		for (int itr = 0; itr < nodeList.getLength(); itr++) {
-			Node node = nodeList.item(itr);
-			NodeList childList = node.getChildNodes();
-			System.out.println(childList.getLength());
-			for(int i = 9; i< childList.getLength();i++) {
-				Elements eElement = (Elements) childList;
-				 Node child = childList.item(i);
-//				 System.out.println(child.getTextContent());
-			}
-//			System.out.println("\nNode Name :" + node.getNodeName());
+		TestService test = new TestService();
+		test.extractData();
+//		File file = new File("C:\\Users\\fahim.reza\\Desktop\\New folder\\Book1.xml");
+//		File file = new File("D:\\Spring Workspace\\Book1.xml");
+//		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+//		DocumentBuilder db = dbf.newDocumentBuilder();
+//		org.w3c.dom.Document doc = db.parse(file);
+//		doc.getDocumentElement().normalize();
+//
+//		NodeList nodeList = doc.getElementsByTagName("Row");
+//		System.out.println(nodeList.getLength());
+//		for (int itr = 0; itr < nodeList.getLength(); itr++) {
+//			Node node = nodeList.item(itr);
 //			if (node.getNodeType() == Node.ELEMENT_NODE) {
 //				Element eElement = (Element) node;
-//				System.out.println(eElement.getE);
-//				System.out.println("Student id: " + eElement.getElementsByTagName("id").item(0).getTextContent());
-			}
-		}
+//				System.out.println(eElement.getElementsByTagName("Cell").item(9).getTextContent().trim());
+//				System.out.println(eElement.getElementsByTagName("Cell").item(10).getTextContent().trim());
+//			}
+//
+//		}
 	}
+
+}
