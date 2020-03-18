@@ -11,6 +11,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -31,26 +32,30 @@ class TestXml {
 
 	@Test
 	void test() throws ParserConfigurationException, SAXException, IOException {
-		TestService test = new TestService();
-		test.extractData();
-//		File file = new File("C:\\Users\\fahim.reza\\Desktop\\New folder\\Book1.xml");
-//		File file = new File("D:\\Spring Workspace\\Book1.xml");
-//		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-//		DocumentBuilder db = dbf.newDocumentBuilder();
-//		org.w3c.dom.Document doc = db.parse(file);
-//		doc.getDocumentElement().normalize();
-//
-//		NodeList nodeList = doc.getElementsByTagName("Row");
-//		System.out.println(nodeList.getLength());
-//		for (int itr = 0; itr < nodeList.getLength(); itr++) {
-//			Node node = nodeList.item(itr);
-//			if (node.getNodeType() == Node.ELEMENT_NODE) {
-//				Element eElement = (Element) node;
-//				System.out.println(eElement.getElementsByTagName("Cell").item(9).getTextContent().trim());
-//				System.out.println(eElement.getElementsByTagName("Cell").item(10).getTextContent().trim());
-//			}
-//
-//		}
+		File file = new File("D:\\Spring Workspace\\allquestion&options.xml");
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = dbf.newDocumentBuilder();
+		Document doc = db.parse(file);
+		doc.getDocumentElement().normalize();
+		NodeList nodeList = doc.getElementsByTagName("choiceInteraction");
+		for (int itr = 0; itr < nodeList.getLength(); itr++) {
+			Node node = nodeList.item(itr);
+			if (node.getNodeType() == Node.ELEMENT_NODE) {
+				Element eElement = (Element) node;
+				System.out.println(eElement.getElementsByTagName("prompt").item(0).getTextContent());
+				getOptions(eElement);
+			}
+		}
+
 	}
 
-}
+	private void getOptions(Element eElement) {
+		NodeList nodeList = eElement.getElementsByTagName("simpleChoice");
+		for(int i = 0; i<nodeList.getLength();i++) {
+			System.out.println(nodeList.item(i).getTextContent());
+			NodeList nodeList2 = eElement.getElementsByTagName("IsAnswer");
+			System.out.println(nodeList2.item(i).getTextContent());
+		}
+	}
+	}
+
