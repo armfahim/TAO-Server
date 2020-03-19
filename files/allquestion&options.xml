@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i1582797827826320" title="Sec" label="Sec" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-RC02">
+  <responseDeclaration identifier="RESPONSE_1" cardinality="multiple" baseType="identifier"/>
+  <responseDeclaration identifier="RESPONSE_2" cardinality="multiple" baseType="identifier"/>
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier"/>
+  <responseDeclaration identifier="RESPONSE_3" cardinality="multiple" baseType="identifier"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="0"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>In object-oriented programming, new classes can be defined by extending existing classes. This is an example of:
+          </prompt>
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Encapsulation</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Interface</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Composition </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Inheritance </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Aggregation</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+
+    <!-- Start From Here -->
+
+      <div class="grid-row">
+       <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is garbage collection in the context of Java?
+          </prompt>
+          <!-- 100001 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">The operating system periodically deletes all of the java files available on the system</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Any package imported in a program and not used is automatically deleted</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">When all references to an object are gone, the memory used by the object is automatically reclaimed. </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">The JVM checks the output of any Java program and deletes anything that doesn’t make sense </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">When all references to an object are gone the memory used by the object is not reclaimed..</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the error in the following class definitions?  Abstract class xy  {  abstract sum (int x, int y) { }  }
+          </prompt>
+          <!-- 100002 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Class header is not defined properly.</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Constructor is not defined.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Method is not defined properly </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Method is defined properly </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">No error.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Method overriding is combination of inheritance and polymorphism?
+          </prompt>
+          <!-- 100003 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">True</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">False</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>A package is a collection of
+          </prompt>
+          <!-- 100004 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Interfaces</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Editing tools</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Classes and interfaces</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Editing tools and interfaces.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these is an incorrect array declaration?
+          </prompt>
+          <!-- 100005 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">int arr[] = new int[5];</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">int [] arr = new int[5];</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">int arr[]; arr = new int[5];</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">int arr[] = int [5] new;</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Generics does not work with?
+          </prompt>
+          <!-- 100006 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Set</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">List</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Tree</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Array</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+              
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>How to copy contents of array?
+          </prompt>
+          <!-- 100007 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">System.arrayCopy()</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Array.copy()</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Arrays.copy() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Collection.copy() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+  
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following has a method names flush( )?
+          </prompt>
+          <!-- 100008 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Input stream</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Output Stream</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Reader stream</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Input reader stream</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Input output stream</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the sequence of major events in the life of an applet?
+          </prompt>
+          <!-- 100009 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">init, start, stop, destroy</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">start, init , stop , destroy</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">init, start , destroy, stop</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">init, start, destroy</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">destroy, start, init, stop.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these statements is correct?
+          </prompt>
+          <!-- 100010 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">true and false are numeric values 1 and 0</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">true and false are numeric values 0 and 1</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">true is any non-zero value and false is 0</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">true and false are non-numeric values</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following statements are true regarding the finalize( ) method?
+          </prompt>
+          <!-- 100011 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">The finalize ( ) method must be declared with protected accessibility</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">The compiler will fail to compile the code that explicitly tries to call the finalize( ) method</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">The body of the finalize ( ) method can only access other objects that are eligible for garbage collection </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">The finalize() method can’t be overloaded. </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">The finalize() method can’t be overloaded.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these selection statements test only for equality?
+          </prompt>
+          <!-- 100012 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">if</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">switch</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">if and switch</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">none of the mentioned</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+    
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these jump statements can skip processing the remainder of the code in its body for a particular iteration?
+          </prompt>
+          <!-- 100013 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">break</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">return</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">exit </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">continue </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which one of these is a valid method declaration?
+          </prompt>
+          <!-- 100014 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">void method1</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">void method2()</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">void method3(void) </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">method4() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">methods(void).</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following is true about the use of modifiers?
+          </prompt>
+          <!-- 100015 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">If no accessibility modifier (public, protected, and private) is specified for a member declaration, the member is only accessible for classes in the package of its class and subclasses of its class anywhere </simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">You cannot specify accessibility of local variables. They are only accessible within the block in which they are declared</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Subclasses of a class must reside in the same package as the class they extend </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Local variables can be declared static </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">None of the above.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is true about do statement?
+          </prompt>
+          <!-- 100016 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">do statement executes the code of a loop at least once</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">do statement does not get execute if condition is not matched in the first iteration</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">do statement checks the condition at the beginning of the loop </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">do statement executes the code more than once always </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following is not a valid flow control statement?
+          </prompt>
+          <!-- 100017 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">exit()</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">break</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">continue </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">return </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following is not OOPS concept in Java?
+          </prompt>
+          <!-- 100018 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Inheritance</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Encapsulation</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Polymorphism </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Compilation </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which concept of Java is achieved by combining methods and attribute into a class?
+          </prompt>
+          <!-- 100019 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Encapsulation</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Inheritance</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Polymorphism </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Abstraction </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which component is used to compile, debug and execute java program?
+          </prompt>
+          <!-- 100020 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">JVM</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">JDK</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">JIT </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">JRE </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the extension of java code files?
+          </prompt>
+          <!-- 100021 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">.class</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">.java</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">.txt </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">.js </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the return type of a method that does not return any value?
+          </prompt>
+          <!-- 100022 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">int</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">float</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">void </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">double </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which method can be defined only once in a program?
+          </prompt>
+          <!-- 100023 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">main method</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">finalize method</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">static method </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">private method </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Aggregation</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following events will cause a thread to die?
+          </prompt>
+          <!-- 100024 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">The method sleep( ) is called</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">The method wait( ) is called</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Execution of the start( ) method ends </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Execution of the run( ) method ends </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Execution of the run() method is called.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the fundamental unit of information of writer streams?
+          </prompt>
+          <!-- 100025 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Characters</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Information</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Bytes </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Files </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Records</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these access specifiers must be used for main() method?
+          </prompt>
+          <!-- 100026 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">private</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">public</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">protected </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">none of the mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following is a member of the java.lang package?
+          </prompt>
+          <!-- 100027 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">List</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Queue</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Math </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Stack </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Process</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>How many arguments can be passed to main()?
+          </prompt>
+          <!-- 100028 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Infinite</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Only 1</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">System Dependent </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">None of the mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+        
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the process of defining a method in a subclass having same name and type signature as a method in its superclass?
+          </prompt>
+          <!-- 100029 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Method overloading</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Method overriding</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Method hiding </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">None of the mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these field declarations are legal within the body of an interface?
+          </prompt>
+          <!-- 100030 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Private final static int answer = 42</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">public static int answer=42</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">final static answer =42 </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">int answer </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">No error.</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these operators can be used to concatenate two or more String objects?
+          </prompt>
+          <!-- 100031 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">+</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">+=</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">and</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">|| </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Aggregation</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of this method of class String is used to obtain a length of String object?
+          </prompt>
+          <!-- 100032 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">get()</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Sizeof()</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">lengthof() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">length() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these class is a superclass of all other classes?
+          </prompt>
+          <!-- 100033 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Math</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Process</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">System </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Object </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the difference between length() and size() of ArrayList?
+          </prompt>
+          <!-- 100034 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">length() and size() return the same value</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">length() is not defined in ArrayList</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">size() is not defined in ArrayList </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">length() returns the capacity of ArrayList and size() returns the actual number of elements stored in the list </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these method of class String is used to remove leading and trailing whitespaces?
+          </prompt>
+          <!-- 100035 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">startsWith()</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">trim()</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Trim() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">doTrim() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these is not a bitwise operator?
+          </prompt>
+          <!-- 100036 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">and</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">andEqual=</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">|= </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show"> none of the mentioned aboce </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of these classes provide implementation of map interface?
+          </prompt>
+          <!-- 100037 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">ArrayList</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">HashMap</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">LinkedList </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">DynamicList </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which data manipulation command is used to combines the records from one or more tables? 
+          </prompt>
+          <!-- 100038 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">SELECT</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">PROJECT</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">JOIN </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">PRODUCT </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which operator is used to compare a value to a specified list of values?
+          </prompt>
+          <!-- 100039 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">BETWEEN</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">ANY</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">IN </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">ALL </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>___________removes all rows from a table without logging the individual row deletions?
+          </prompt>
+          <!-- 100040 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">DELETE</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">REMOVE</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">DROP </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">TRUNCATE </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following is not a DDL command?
+          </prompt>
+          <!-- 100041 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">UPDATE</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">TRUNCATE</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">ALTER </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">None of the Mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>________________ is not a category of SQL command.
+          </prompt>
+          <!-- 100042 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">TCL</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">SCL</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">DCL </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">DDL </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What type of join is needed when you wish to include rows that do not have matching values?
+          </prompt>
+          <!-- 100043 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Equi-join</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Natural join</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Outer join </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">All of the Mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>A UNION query is which of the following?
+          </prompt>
+          <!-- 100044 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Combines the output from no more than two queries and must include the same number of columns</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Combines the output from no more than two queries and does not include the same number of columns</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Combines the output from multiple queries and must include the same number of columns </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Combines the output from multiple queries and does not include the same number of columns </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>How many tables may be included with a join?
+          </prompt>
+          <!-- 100045 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">One</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Two</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Three</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">All of the Mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following is a large object data type?
+          </prompt>
+          <!-- 100046 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">varchar(max)</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">varbinary(max)</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">nvarchar(max) </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">image </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the data type has a storage size of 8 bytes?
+          </prompt>
+          <!-- 100047 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">timestamp</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">uniqueidentifier</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">real </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">smallmoney </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following is not an aggregate function?
+          </prompt>
+          <!-- 100048 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Avg</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Sum</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">With </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Min </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>All aggregate functions except __________ ignore null values in their input collection.
+          </prompt>
+          <!-- 100049 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Count(attribute)</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Count(*)</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Avg </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Sum </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which SQL function is used to count the number of rows in a SQL query?
+          </prompt>
+          <!-- 100050 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">COUNT()</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">NUMBER()</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SUM() </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">COUNT(*) </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What does DML stand for?
+          </prompt>
+          <!-- 100051 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Different Mode Level</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Data Model Language</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Data Mode Lane </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Data Manipulation language </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>With SQL, how can you return all the records from a table named “Persons” sorted descending by “FirstName”?
+          </prompt>
+          <!-- 100052 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">SELECT * FROM Persons SORT BY ‘FirstName’ DESC</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">SELECT * FROM Persons ORDER FirstName DESC</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT * FROM Persons SORT ‘FirstName’ DESC </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT * FROM Persons ORDER BY FirstName DESC </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which SQL keyword is used to sort the result-set?
+          </prompt>
+          <!-- 100053 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">ORDER BY</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">SORT</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">ORDER </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SORT BY </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>How can you change “Hansen” into “Nilsen” in the “LastName” column in the Persons table?
+          </prompt>
+          <!-- 100054 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">UPDATE Persons SET LastName=’Hansen’ INTO LastName=’Nilsen’</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">MODIFY Persons SET LastName=’Nilsen’ WHERE LastName=’Hansen’</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">MODIFY Persons SET LastName=’Hansen’ INTO LastName=’Nilsen’ </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">UPDATE Persons SET LastName=’Nilsen’ WHERE LastName=’Hansen’ </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which SQL statement is used to return only different values?
+          </prompt>
+          <!-- 100055 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">SELECT DIFFERENT</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">SELECT UNIQUE</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT DISTINCT </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT ALL </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which TCL command undo all the updates performed by the SQL in the transaction?
+          </prompt>
+          <!-- 100056 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">ROLLBACK</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">COMMIT</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">TRUNCATE </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">DELETE </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is the meaning of LIKE ‘%0%0%’?
+          </prompt>
+          <!-- 100057 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">Feature begins with two 0’s</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">Feature ends with two 0’s</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Feature has more than two 0’s </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Feature has two 0’s in it, at any position </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>SQL query to find all the cities whose humidity is 95.
+          </prompt>
+          <!-- 100058 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">SELECT city WHERE humidity = 95</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">SELECT city FROM weather WHERE humidity = 95</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT humidity = 89 FROM weather </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT city FROM weather </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Find the names of these cities with temperature and condition whose condition is neither sunny nor cloudy.
+          </prompt>
+          <!-- 100059 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">SELECT city, temperature, condition FROM weather WHERE condition NOT IN (‘sunny’, ‘cloudy’)</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">SELECT city, temperature, condition FROM weather WHERE condition NOT BETWEEN (‘sunny’, ‘cloudy’)</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT city, temperature, condition FROM weather WHERE condition IN (‘sunny’, ‘cloudy’) </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">SELECT city, temperature, condition FROM weather WHERE condition BETWEEN (‘sunny’, ‘cloudy’); </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>The command to remove rows from a table ‘CUSTOMER’ is __________________
+          </prompt>
+          <!-- 100060 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">DROP FROM CUSTOMER</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">UPDATE FROM CUSTOMER</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">REMOVE FROM CUSTOMER </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">DELETE FROM CUSTOMER WHERE </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is a view?
+          </prompt>
+          <!-- 100061 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">A view is a special stored procedure executed when certain event occurs</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">A view is a virtual table which results of executing a pre-compiled query</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">A view is a database diagram </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">None of the Mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>SQL Server has mainly how many types of views?
+          </prompt>
+          <!-- 100062 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">one</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">two</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">three </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">four </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Dynamic Management View is a type of ___________
+          </prompt>
+          <!-- 100063 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">System Defined Views</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">User Defined View</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Simple View </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Complex View </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">Aggregation</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>You can delete a view with ___________ command.
+          </prompt>
+          <!-- 100064 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">DROP VIEW</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">DELETE VIEW</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">REMOVE VIEW </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">TRUNCATE VIEW </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following blocks are used for error handling in SQL Server?
+          </prompt>
+          <!-- 100065 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">TRY…CATCH</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">TRY…FINAL</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">TRY…END </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">CATCH…TRY </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+     <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Which of the following statements can be checked for Errors?
+          </prompt>
+          <!-- 100066 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">CREATE</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">DROP</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">DELETE </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">INSERT </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div> 
+    <div class="grid-row">
+     <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_1" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Exception handling is possible in SQL Server using _____________
+          </prompt>
+          <!-- 100067 -->
+          <simpleChoice identifier="choice_5" fixed="false" showHide="show">THROW</simpleChoice>
+          <IsAnswer identifier="answer_1" fixed="false" showHide="show">1</IsAnswer>
+          
+          <simpleChoice identifier="choice_6" fixed="false" showHide="show">FINAL</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+          
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">FINALLY </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+         
+          <simpleChoice identifier="choice_7" fixed="false" showHide="show">All of the mentioned </simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+          
+        </choiceInteraction>
+      </div>
+    </div>
+    
+
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_2" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>who are you</prompt>
+          <simpleChoice identifier="choice_8" fixed="false" showHide="show">choice #4</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+          <simpleChoice identifier="choice_9" fixed="false" showHide="show">choice #5</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+          <simpleChoice identifier="choice_10" fixed="false" showHide="show">choice #6</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>Where you live</prompt>
+          <simpleChoice identifier="choice_1" fixed="false" showHide="show">choice #7</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+          <simpleChoice identifier="choice_2" fixed="false" showHide="show">choice #8</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+
+          <simpleChoice identifier="choice_3" fixed="false" showHide="show">choice #9</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+        </choiceInteraction>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <choiceInteraction responseIdentifier="RESPONSE_3" shuffle="false" maxChoices="0" minChoices="0" orientation="vertical">
+          <prompt>What is your Father name</prompt>
+          <simpleChoice identifier="choice_4" fixed="false" showHide="show">choice #10</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+
+          <simpleChoice identifier="choice_11" fixed="false" showHide="show">choice #11</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">1</IsAnswer>
+
+          <simpleChoice identifier="choice_12" fixed="false" showHide="show">choice #12</simpleChoice>
+          <IsAnswer identifier="answer_2" fixed="false" showHide="show">0</IsAnswer>
+        </choiceInteraction>
+      </div>
+    </div>
+ </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE_1"/>
+          <correct identifier="RESPONSE_1"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE_2"/>
+          <correct identifier="RESPONSE_2"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct identifier="RESPONSE"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE_3"/>
+          <correct identifier="RESPONSE_3"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

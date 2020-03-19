@@ -17,7 +17,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name ="T_EXAM_QUESTION_OPTION_SET")
+@Table(name ="T_EXAM_QUESTION_OPTION")
 public class ExamQuestionOption {
 	 @Id
 	 @Column(name = "id_option_key")
@@ -47,7 +47,7 @@ public class ExamQuestionOption {
 	 private int isAnswer;
 
 	 @ManyToOne
-	 private ExamQuestion examQuestion;
+	 private ExamQuestion exam_question;
 
 //	public int getOptionKey() {
 //		return optionKey;

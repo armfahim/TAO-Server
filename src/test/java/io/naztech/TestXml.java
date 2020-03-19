@@ -18,7 +18,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import io.naztech.service.ScrapXml;
-import io.naztech.service.TestService;
 
 class TestXml {
 
@@ -32,7 +31,9 @@ class TestXml {
 
 	@Test
 	void test() throws ParserConfigurationException, SAXException, IOException {
-		File file = new File("D:\\Spring Workspace\\allquestion&options.xml");
+//		File file = new File("D:\\Spring Workspace\\allquestion&options.xml");
+		File file = new File("C:\\GIT\\Projects\\TAO-Server\\files\\allquestion&options.xml");
+		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		Document doc = db.parse(file);

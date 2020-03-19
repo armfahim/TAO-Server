@@ -16,7 +16,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name ="T_EXAM_QUESTION_SET")
+@Table(name ="T_EXAM_QUESTION")
 public class ExamQuestion {
 	 @Id
 	 @Column(name = "id_question_key")
@@ -46,7 +46,7 @@ public class ExamQuestion {
 	 @Column(name = "tx_question_set")
 	 private String questionSet;
 	 
-	 @OneToMany(cascade = CascadeType.ALL,mappedBy= "examQuestion")
+	 @OneToMany(cascade = CascadeType.ALL,mappedBy= "exam_question")
 //	 @JoinColumn(name="id_question_key")
 //	 @JoinColumn(name = "id_question_key", referencedColumnName = "id_question_key")
 //	 @OneToMany(mappedBy="examQuestion")
